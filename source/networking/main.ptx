@@ -1,4 +1,12 @@
-    <chapter xml:id="networking">
-      <title>Computer Networking</title>
+<chapter xml:id="networking">
+    <title>Computer Networking</title>
 
-    </chapter>
+    <introduction>This chapter consists of selections from "An Introduction to Computer Networks" by Peter L. Dordal, Version 1.9.21. This textbook is licsensed under <url href="https://creativecommons.org/licenses/by-nc-nd/3.0/">https://creativecommons.org/licenses/by-nc-nd/3.0/</url> The full source is available <url href="https://raw.githubusercontent.com/Washburn-CIS/CM105-Intro-to-CS/main/source/networking/ComputerNetworks.pdf">here</url> and more information about the book can be found <url href="https://intronetworks.cs.luc.edu/">here on the web</url>. Each section of this chapter will link to a verbatim selection from this book as well as some supporting material. </introduction>
+    
+    
+    <section>
+      <title>Introduction to Networking</title>
+      <introduction>This section provides a broad introduction to computer networking concepts. Please fully ready <url href="https://raw.githubusercontent.com/Washburn-CIS/CM105-Intro-to-CS/main/source/networking/1.pdf">this PDF with excerpts from chapter 1</url> of the textbook.</introduction>
+    </section>
+    
+</chapter>
