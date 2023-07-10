@@ -1,4 +1,21 @@
-    <chapter xml:id="linux">
-      <title>Command-Line Interfaces and Linux</title>
+<chapter xml:id="linux">
+    <title>Command-Line Interfaces and Linux</title>
 
-    </chapter>
+    <introduction>This chapter consists of selections from "The Linux Command Line" by William Shotts, Version 19.01A. This textbook is licsensed under <url href="https://creativecommons.org/licenses/by-nc-nd/3.0/">https://creativecommons.org/licenses/by-nc-nd/3.0/</url> The full source is available <url href="https://raw.githubusercontent.com/Washburn-CIS/CM105-Intro-to-CS/main/source/linux/TLCL-19.01.pdf">here</url> and more information about the book can be found <url href="https://linuxcommand.org/tlcl.php">here on the web</url>. Each section of this chapter will link to a verbatim selection from this book as well as some supporting material. </introduction>
+    
+    <section>
+      <title>Command-Line Interfaces</title>
+      <introduction>This section will introduce you to the basics of using a command-line interface to access a Linux Operating System. Please fully ready <url href="https://raw.githubusercontent.com/Washburn-CIS/CM105-Intro-to-CS/main/source/linux/1.pdf">this PDF with excerpts from chapters 1-3</url> of the textbook.</introduction>
+    </section>
+    
+    <section>
+      <title>Secure Shell Access</title>
+      <introduction>This section will show you how to access a remote Linux system using secure shell (SSH). Please fully ready <url href="https://raw.githubusercontent.com/Washburn-CIS/CM105-Intro-to-CS/main/source/linux/2.pdf">this PDF containing chapter 16</url> of the textbook.</introduction>
+    </section>
+    
+    <section>
+      <title>File Systems</title>
+      <introduction>This section will introduce you to the basics of file systems and, in particular, how to work with Linux file systems from the command-line. Please fully ready <url href="https://raw.githubusercontent.com/Washburn-CIS/CM105-Intro-to-CS/main/source/linux/3.pdf">this PDF containing chapters 5, 9, and 10</url> of the textbook.</introduction>
+    </section>
+
+</chapter>
