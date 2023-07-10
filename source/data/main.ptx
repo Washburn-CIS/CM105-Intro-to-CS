@@ -1,4 +1,11 @@
-    <chapter xml:id="data">
-      <title>Basic Data Representations</title>
+<chapter xml:id="linux">
+    <title>Basic Data Representations</title>
 
-    </chapter>
+    <introduction>This chapter consists of selections from "Computer Organization and Design Fundamentals" by David Tarnoff, Revised First Edition (2007). This textbook is Copyright ©2005-2007 by David L. Tarnoff, all rights reserved, and published with the assistance of Lulu.com. More information about the book can be found <url href="https://faculty.etsu.edu/tarnoff/138292/">here on the web</url>. Each section of this chapter will link to a verbatim selection from this book as well as some supporting material. </introduction>
+    
+    <section>
+      <title>Binary Formats</title>
+      <introduction>This section will introduce you to the binary number formats and performing arithemtic with these formats. Please fully ready <url href="https://raw.githubusercontent.com/Washburn-CIS/CM105-Intro-to-CS/main/source/data/1.pdf">this PDF with excerpts from chapters 2-3</url> of the textbook.</introduction>
+    </section>
+    
+</chapter>
