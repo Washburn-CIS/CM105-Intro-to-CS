@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <macros>
+      \newcommand{\R}{\mathbb R}
+    </macros>
+    <latex-image-preamble>
+      \usepackage{tikz}
+    </latex-image-preamble>
+  </docinfo>
+
+  <book xml:id="my-great-book">
+    <title>CM105 Introduction to Computer Science</title>
+
+    <frontmatter xml:id="frontmatter">
+      <titlepage>
+        <author>
+          <personname>Joseph Kendall-Morwick</personname>
+          <department>Computer Information Sciences</department>
+          <institution>Washburn University</institution>
+        </author>
+        <date>
+          <today />
+        </date>
+      </titlepage>
+
+      <colophon>
+
+        <website>
+          <name>
+            <c>Washburn CIS</c>
+          </name>
+          <address>https://www.washburn.edu/academics/college-schools/arts-sciences/departments/computer-information-sciences/index.html</address>
+        </website>
+
+        <copyright>
+          <year>2023</year>
+          <holder>Joseph Kendall-Morwick</holder>
+          <shortlicense> 
+            This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+          </shortlicense>
+        </copyright>
+<p>This is an interactive textbook designed for use at Washburn University's CM105 "Introduction to Computer Science" course. This textbook is compiled from a number of other modified open-source textbooks. Licenses and attributions are indicated at the head of each chapter (each chapter expands on only one open-source textbook).
+      </colophon>
+    </frontmatter>
+
+    <chapter xml:id="chapter-title">
+      <title>Command-Line Interfaces and Linux</title>
+
+      <section xml:id="section-title">
+        <title>Command-Line Interfaces and Operating Systems</title>
+        <p>Hello</p>
+      </section>
+
+    </chapter>
+
+    <chapter xml:id="chapter-title">
+      <title>Basic Data Representations</title>
+
+      <section xml:id="section-title">
+        <title>Basic Data Representations</title>
+        <p>Hello</p>
+      </section>
+
+    </chapter>
+
+    <chapter xml:id="chapter-title">
+      <title>Computer Networking</title>
+
+      <section xml:id="section-title">
+        <title>Computer Networking</title>
+        <p>Hello</p>
+      </section>
+
+    </chapter>
+
+    <chapter xml:id="chapter-title">
+      <title>The World-Wide Web and Web Applications</title>
+
+      <section xml:id="section-title">
+      <title>The World-Wide Web and Web Applications</title>
+        <p>Hello</p>
+      </section>
+
+    </chapter>
+
+    <chapter xml:id="chapter-title">
+      <title>Database Systems</title>
+
+      <section xml:id="section-title">
+        <title>Database Systems</title>
+        <p>Hello</p>
+      </section>
+
+    </chapter>
+
+    <chapter xml:id="chapter-title">
+      <title>Computer Programming in Python</title>
+
+      <section xml:id="section-title">
+        <title>Computer Programming in Python</title>
+        <p>Hello</p>
+      </section>
+
+    </chapter>
+
+    <backmatter xml:id="backmatter">
+      <title>Backmatter</title>
+
+      <colophon>
+        <p> This book was authored in <pretext />. </p>
+      </colophon>
+
+    </backmatter>
+
+  </book>
+</pretext>
