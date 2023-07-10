@@ -46,41 +46,18 @@
       </colophon>
     </frontmatter>
 
-    <chapter xml:id="linux">
-      <title>Command-Line Interfaces and Linux</title>
 
-      <section xml:id="section-title">
-        <title>Command-Line Interfaces and Operating Systems</title>
-        <p>Hello</p>
-      </section>
+    <xi:include href="./linux/main.ptx"/>
+    
+    <xi:include href="./data/main.ptx"/>
 
-    </chapter>
+    <xi:include href="./networking/main.ptx"/>
 
-    <chapter xml:id="data">
-      <title>Basic Data Representations</title>
+    <xi:include href="./web/main.ptx"/>
 
+    <xi:include href="./database/main.ptx"/>
 
-    </chapter>
-
-    <chapter xml:id="networking">
-      <title>Computer Networking</title>
-
-    </chapter>
-
-    <chapter xml:id="web">
-      <title>The World-Wide Web and Web Applications</title>
-
-    </chapter>
-
-    <chapter xml:id="database">
-      <title>Database Systems</title>
-
-    </chapter>
-
-    <chapter xml:id="programming">
-      <title>Computer Programming in Python</title>
-
-    </chapter>
+    <xi:include href="./programming/main.ptx"/>
 
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
