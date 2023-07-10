@@ -14,8 +14,8 @@
     </section>
     
     <section>
-      <title>File Systems</title>
-      <introduction>This section will introduce you to the basics of file systems and, in particular, how to work with Linux file systems from the command-line. Please fully ready <url href="https://raw.githubusercontent.com/Washburn-CIS/CM105-Intro-to-CS/main/source/linux/3.pdf">this PDF containing chapters 5, 9, and 10</url> of the textbook.</introduction>
+      <title>File Systems and Process Management</title>
+      <introduction>This section will introduce you to the basic operating system concepts of file systems and process management. In particular, it will explain how to work with Linux file systems and processes from the command-line. Please fully ready <url href="https://raw.githubusercontent.com/Washburn-CIS/CM105-Intro-to-CS/main/source/linux/3.pdf">this PDF containing chapters 5, 9, and 10</url> of the textbook.</introduction>
     </section>
 
 </chapter>
