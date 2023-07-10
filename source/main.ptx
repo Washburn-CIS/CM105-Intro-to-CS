@@ -42,11 +42,11 @@
             This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
           </shortlicense>
         </copyright>
-<p>This is an interactive textbook designed for use at Washburn University's CM105 "Introduction to Computer Science" course. This textbook is compiled from a number of other modified open-source textbooks. Licenses and attributions are indicated at the head of each chapter (each chapter expands on only one open-source textbook).
+<p>This is an interactive textbook designed for use at Washburn University's CM105 "Introduction to Computer Science" course. This textbook is compiled from a number of other modified open-source textbooks. Licenses and attributions are indicated at the head of each chapter (each chapter expands on only one open-source textbook).</p>
       </colophon>
     </frontmatter>
 
-    <chapter xml:id="chapter-title">
+    <chapter xml:id="linux">
       <title>Command-Line Interfaces and Linux</title>
 
       <section xml:id="section-title">
@@ -56,53 +56,29 @@
 
     </chapter>
 
-    <chapter xml:id="chapter-title">
+    <chapter xml:id="data">
       <title>Basic Data Representations</title>
 
-      <section xml:id="section-title">
-        <title>Basic Data Representations</title>
-        <p>Hello</p>
-      </section>
 
     </chapter>
 
-    <chapter xml:id="chapter-title">
+    <chapter xml:id="networking">
       <title>Computer Networking</title>
 
-      <section xml:id="section-title">
-        <title>Computer Networking</title>
-        <p>Hello</p>
-      </section>
+    </chapter>
+
+    <chapter xml:id="web">
+      <title>The World-Wide Web and Web Applications</title>
 
     </chapter>
 
-    <chapter xml:id="chapter-title">
-      <title>The World-Wide Web and Web Applications</title>
-
-      <section xml:id="section-title">
-      <title>The World-Wide Web and Web Applications</title>
-        <p>Hello</p>
-      </section>
-
-    </chapter>
-
-    <chapter xml:id="chapter-title">
+    <chapter xml:id="database">
       <title>Database Systems</title>
 
-      <section xml:id="section-title">
-        <title>Database Systems</title>
-        <p>Hello</p>
-      </section>
-
     </chapter>
 
-    <chapter xml:id="chapter-title">
+    <chapter xml:id="programming">
       <title>Computer Programming in Python</title>
-
-      <section xml:id="section-title">
-        <title>Computer Programming in Python</title>
-        <p>Hello</p>
-      </section>
 
     </chapter>
 
