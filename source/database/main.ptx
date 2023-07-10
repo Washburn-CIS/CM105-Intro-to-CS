@@ -1,4 +1,113 @@
 <chapter xml:id="database">
-      <title>Database Systems</title>
+    <title>Database Systems</title>
 
+    <introduction>This chapter is modified from "A Practical Introduction to Databases" by Christopher Painter‑Wakefield, Version 0.1.1. This textbook is licsensed through <url href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</url>. More information about the original text can be found <url href="https://runestone.academy/ns/books/published/practical_db/index.html">here on the web</url>. Each section of this chapter has been modified from various portions of original source of this textbook and the resulting chapter is Coyright 2023 Joseph Kendall-Morwick and also licsensed through the same creative commons license as noted in the preface. </introduction>
+    
+    <section>
+      <title>Database Basics</title>
+      <introduction>This first section will introduce you to writing basic database queries using SQL (Structured Query Language).</introduction>
+      
+      <subsection><title>Databases and database systems</title>
+        <p>Before we start, we should define these two terms:</p>
+
+<p><term>database</term>
+    An organized collection of data.</p>
+
+<p><term>database management system (DBMS)</term>
+    The software that manages the storage of data in a database and provides facilities for searching, retrieving, and modifying data in a database.</p>
+
+
+<p>The word "database" is frequently used as shorthand to mean both a database and the DBMS managing it, and both usages can be found in this textbook.  Also, "database system" is generally used as a synonym for DBMS.</p>
+
+      </subsection>
+      
+      <subsection><title>Tables</title>
+      <p>While relational databases can contain many types of *objects*, the object type that stores data is the *table*.  Each table in the database has a name, which usually provides some indication of what kind of data can be found in the table.  The table structure is defined by the table's *columns*, each of which has a name and an associated data type.  The actual data is contained in the *rows* of the table; each row is one data point and has a value for each column of the table.</p>
+
+<p>We can visualize a simple table as, well, a table:
+
+    <figure>
+        <title>table_illustration</title>
+        <caption>Illustration of a table</caption>
+        <image width="100%" source="database/table_illustration.svg"/>
+    </figure>
+
+
+The illustration above shows a table named <c>fruit_stand</c> with three columns named <c>item</c>, <c>price</c>, and <c>unit</c>.  Although the illustration does not show the data types, we might infer that the <c>item</c> and <c>unit</c> columns contain text and the <c>price</c> column contains decimal numbers.  Each row of <c>fruit_stand</c> contains information about one kind of fruit sold at the fruit stand.</p>
+
+      </subsection>
+      
+      
+      <subsection><title>Structured Query Language (SQL)</title>
+      </subsection>
+      
+      
+      <subsection><title>Retrieving data using SELECT</title>
+      </subsection>
+      
+      
+      <subsection><title>Creating tables and adding data</title>
+      </subsection>
+      
+      
+      <subsection><title>SQL statement rules and conventions</title>
+      </subsection>
+      
+      
+      <subsection><title>Comments</title>
+      </subsection>
+      
+      
+      <subsection><title>Tables used in this chapter</title>
+      </subsection>
+      
+      
+      <subsection><title>Filtering rows: the WHERE clause</title>
+      </subsection>
+      
+      
+      <subsection><title>Ordering data: the ORDER BY clause</title>
+      </subsection>
+      
+      
+      <subsection><title>Retrieving unique rows: the DISTINCT keyword</title>
+      </subsection>
+      
+      
+      <subsection><title>Expressions</title>
+      </subsection>
+      
+      
+      <subsection><title>Column expressions</title>
+      </subsection>
+      
+      
+      <subsection><title>Literals</title>
+      </subsection>
+      
+      
+      <subsection><title>Operators and functions</title>
+      </subsection>
+      
+      
+      <subsection><title>NULL</title>
+      </subsection>
+      
+      
+      <subsection><title>Conditional expressions</title>
+      </subsection>
+   
+      
+    </section>
+    
+    <section>
+      <title>Advanced Queries</title>
+      <introduction>This section will explore more advanced features of SQL to develop more powerful database queries.</introduction>
+      
+      
+      
+      <subsection><title>a</title>
+      </subsection>
+    </section>
+    
 </chapter>
