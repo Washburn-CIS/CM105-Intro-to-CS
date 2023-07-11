@@ -39,22 +39,137 @@ The illustration above shows a table named <c>fruit_stand</c> with three columns
       
       
       <subsection><title>Structured Query Language (SQL)</title>
+      
+
+<p>An important characteristic of modern databases is that they abstract low-level operations on files, tables, indexes and so forth into high-level requests to the database management system.  Requests to the database are typically expressed in a <term>query language</term>.  Query languages are a type of programming language, but are different from most in that query languages tend to be declarative rather than imperative.  Whereas imperative languages require the programmer to specify exactly what steps to take to perform a task, declarative languages simply describe a desired outcome.</p>
+
+<p>Structured query language (SQL) is the most popular query language for relational databases, and is an example of a declarative language.  SQL was developed by engineers at IBM in the 1970s and was standardized by standards organizations ANSI and ISO in 1986, with regular updates following.  New features continue to be added to SQL as relational database technology and applications evolve.</p>
+
+<p>Even though a standard exists for SQL, relational databases have slightly different implementations of the relational model, and similarly different "dialects" of SQL.  Despite these differences, most SQL dialects share enough in common that, with care, highly portable SQL code can be written.  Examples in this textbook use the SQLite database engine, and thus the dialect of SQL used by SQLite.  To the extent possible, however, examples will be portable to other dialects; differences between implementations will be noted where significant.  Due to the large number of relational DBMSes available, only a few highly popular DBMSes are included:  SQLite, PostgreSQL, MySQL, Oracle, and Microsoft SQL Server.</p>
+
+<p>SQLite examples can be run directly inside this online textbook (more on this below).</p>
+
+
+<p>SQL is sometimes subdivided into smaller languages focused on particular tasks: a data query language (DQL) for retrieving data, a data manipulation language (DML) for modifying data, a data definition language (DDL) for defining and modifying database objects, and a data control language (DCL) for managing authorization and access to data.  These distinctions are largely unimportant, and will not be used in this textbook.</p>
+
+<p>The basic element of SQL is the <term>statement</term> or <term>query</term>.  While a distinction can be made between these two (statements act to change the state of the database, while queries act to retrieve data), it is common to use the terms interchangeably.  Statements in SQL read much like English sentences, although with very strict rules.</p>
+
+<p>SQL is often pronounced as "sequel", although it is equally valid to simply say each letter.</p>
+
       </subsection>
-      
-      
-      <subsection><title>Retrieving data using SELECT</title>
+
+
+	<subsection><title>Retrieving data using SELECT</title>
+
+<p>In its simplest form, the <c>SELECT</c> statement can be used to retrieve all data from a table.  We just need to know the table name:</p>
+
+<program language="sql"><input>
+    SELECT * FROM fruit_stand;
+</input></program>
+
+<p>Here, <c>fruit_stand</c> is the name of the table.  The <c>*</c> is a special symbol used with <c>SELECT</c> statements to mean "all columns in the table".  The table <c>fruit_stand</c> is one table in the example database for this textbook. The interactive example below will let you query this database; the query above is already set up for you - click on "Run" to see its results.  The column names for the table are shown across the top of the result table.</p>
+
+<program language="sql"><input>
+.. activecode:: sql_basics_example_select
+    :language: sql
+    :dburl: /_static/textbook.sqlite3
+
+    SELECT * FROM fruit_stand;
+</input></program>
+
+<p>The statement (or query) above is said to have two <term>clauses</term>; a clause is a part of a SQL statement, usually starting with a SQL keyword.  The two clauses in the statement above are the <c>SELECT</c> clause, <c>SELECT *</c> and the <c>FROM</c> clause, <c>FROM fruit_stand</c>.  Most clauses are optional in the sense that they are not required in every query, although they will be necessary to produce certain desired results.</p>
+
+
+<p>Above, we retrieved all columns of a table, which may not be the desired result.  We can specify the columns we wish to retrieve, and in what order, by replacing the <c>*</c> in our <c>SELECT</c> clause with a comma-separated list of columns:</p>
+
+<program language="sql"><input>
+    SELECT price, item FROM fruit_stand;
+</input></program>
+
+<p>You can paste this new query into the interactive tool above to see its result.</p>
       </subsection>
       
       
       <subsection><title>Creating tables and adding data</title>
+      
+
+<p>Of course, before you can retrieve data from a database, you need to put data into it.  First, we need to define a table structure.  We do this with a <c>CREATE TABLE</c> statement.  The <c>fruit_stand</c> table above was created using this statement:</p>
+
+<program language="sql"><input>
+    CREATE TABLE fruit_stand (
+      item TEXT,
+      price NUMERIC,
+      unit TEXT
+    );
+</input></program>
+
+<p>When defining a table in SQL, you list the columns you want, giving the name and the data type of the column.  Try creating a new table, **my_purchase**, in the database using the interactive tool below:</p>
+
+<program language="sql"><input>
+.. activecode:: sql_basics_example_create
+    :language: sql
+    :dburl: /_static/textbook.sqlite3
+
+    CREATE TABLE my_purchase (
+      item TEXT,
+      quantity NUMERIC,
+      total_price NUMERIC
+    );
+</input></program>
+
+<p>As soon as you create this table, you can query it using <c>SELECT</c>.  However, there will not be any data in the table yet.  To add data to the table, use <c>INSERT</c> statements:</p>
+
+
+<program language="sql"><input>
+    INSERT INTO my_purchase VALUES ('apple', 2, 6.98);
+    INSERT INTO my_purchase VALUES ('melon', 1, 0.89);
+</input></program>
+
+<p>Try adding some data to the <c>my_purchase</c> table, and then retrieve it using <c>SELECT</c>.  You can also add data to the <c>fruit_stand</c> table, or try creating your own tables and adding data to them.  Be sure to use single quotes around any string values you put into a table.</p>
+
+<p>We should note, at this point, that the data types we have used here are not standard SQL. They are supported by SQLite, the database implementation used in this online textbook. </p>
       </subsection>
       
       
       <subsection><title>SQL statement rules and conventions</title>
+      
+<p>First, note that SQL statements are properly terminated by semicolons.  In some software tools, single statements are allowed to be unterminated - this is true in our interactive examples, in fact.  However, we will always show the semicolon in our examples, as they become very important in settings where you want to send a list of statements to the database at one time.</p>
+
+<p>One implication of this is that it is entirely permissible and (in many cases preferable, as in our <c>CREATE TABLE</c> examples) to write statements on multiple lines.  The query below is correct, and equivalent to the same query expressed all on one line:</p>
+
+<program language="sql"><input>
+    SELECT *
+    FROM fruit_stand;
+</input></program>
+
+<p>Next, SQL keywords are case-insensitive.  That is, we can write:
+
+<program language="sql"><input>
+    select * from fruit_stand;
+    Select * From fruit_stand;
+    select * FROM fruit_stand;
+</input></program>
+
+and get the same result for each query.  In the examples in this book, the convention is that SQL keywords will be capitalized.</p>
+
+<p>To some extent, the names of things (tables, columns, functions, etc.) also act as if they are case-insensitive.  However, the behavior here varies among databases.  A fairly common convention is to always put the names of things in lowercase.  The examples in this book will follow that convention, which will help distinguish keywords from things that exist in the database.</p>
+
+<p>Note that the conventions used in this textbook may be different from those used by your teacher, at your place of work, or in code found on the internet!</p>
+
       </subsection>
       
       
       <subsection><title>Comments</title>
+<p>SQL provides for two types of comments, which we will occasionally use to annotate queries in this book.  Any text between `/*` and `*/` forms a multi-line comment.  Single-line comments start with two dashes.  Here is a query using both types of comment:</p>
+
+<program language="sql"><input>
+    SELECT *
+    /* here is a
+       multi-line comment */
+    FROM      -- single-line comment
+      fruit_stand;
+</input></program>
+
       </subsection>
       
       
